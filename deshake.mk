@@ -1,5 +1,5 @@
 ffmpeg_exec=ffmpeg
-ext=MP4
+ext=MOV
 source=$(shell ls source/*.$(ext))
 object=$(patsubst source/%,output/%,$(source:.$(ext)=.MP4))
 trf=$(patsubst source/%,output/%,$(source:.$(ext)=.trf))
